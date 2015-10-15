@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<button plat-tap="newPost()">New blog entry</button>
+	</div>
+	<div id="blogpostsContainer" plat-control="plat-foreach" plat-context="blogPosts">
+		<div class="row blogPost">
+			<h3 class="blogText"><a href="#!/blogposts/{{objectId}}"> {{ title }}</a></h3>
+			<p class="blogText">{{ content }}</p>
+			<p class="blogText">{{ author }}</p>
+		</div>
+	</div>
+</div>
