@@ -9,7 +9,7 @@ export default class MyApp extends App {
 
         router.configure([
             { pattern: '', view: BlogViewControl },
-            { pattern: '1/classes/Posts', view: BlogViewControl },
+            // { pattern: '1/classes/Posts', view: BlogViewControl },
             { pattern: 'newPost', view: BlogNewPostViewControl }
         ]);
     }
